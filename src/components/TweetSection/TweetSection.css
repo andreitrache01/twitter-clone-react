@@ -1,0 +1,68 @@
+.tweet-section {
+    padding: 1.2rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.487);
+}
+
+.tweet-message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.message-input {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.controls {
+    margin-left: 3.5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.controls .btn {
+    width: 5.5rem;
+    background-color: rgb(29, 155, 240) !important;
+    color: white !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.05rem !important;
+    padding: 0.4rem 0rem !important;
+    margin-left: auto;
+    border-radius: 6rem !important;
+}
+
+.controls svg {
+    color: rgb(29, 155, 240);
+    /* padding: 1.2rem; */
+}
+
+.icon-container {
+    padding: 0.6rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container:hover {
+    background-color: rgba(29, 156, 240, 0.184);
+    border-radius: 45%;
+    cursor: pointer;
+}
+
+
+
+.message-input textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.5rem;
+    resize: none;
+    height: 2.5rem;
+}

@@ -1,0 +1,56 @@
+.homepage {
+    color: white;
+    height: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.487);
+    
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: 700;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.487);
+}
+
+.tab {
+    padding: 0.9rem 0rem !important;
+    font-weight: 700;
+}
+
+.tab-box {
+    width: 100%;
+    text-align: center;
+}
+
+.tab-box:hover {
+   background-color: rgba(128, 128, 128, 0.203);
+   cursor: pointer;
+}
+
+.custom-underline {
+    position: relative;
+    display: inline-block;
+  }
+  
+.custom-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    border-radius: 50px; /* adjust as needed */
+    background-color: rgb(29, 155, 240); /* adjust as needed */
+}
+
+.inactive {
+    color: gray;
+    font-weight: 400;
+}

@@ -1,0 +1,181 @@
+.header {
+    width: 31%;
+    overflow-y: auto; /* Adds vertical scrollbar if necessary */
+    overflow-x: hidden;
+    max-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.items {
+    width: 20rem;
+    padding: 0.8rem 1.6rem;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 2.2rem;
+    height: 2.2rem;
+    padding: 0;
+    margin: 0;
+    margin-left: 1.3rem;
+
+}
+
+.logo svg {
+    fill: white;   
+}
+
+.header-list {
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.icon {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.header-list-item {
+    font-size: 1.45rem;
+}
+
+.selected-item-weight {
+    font-weight: 600;
+}
+
+.normal-item-weight {
+    font-weight: 400;
+}
+
+.item-content {
+    width: 100%;
+    align-items: center;
+    padding: 0.6rem;
+    margin-left: 0.8rem !important;
+
+}
+
+.item-content:hover {
+    background-color: rgba(128, 128, 128, 0.203);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.custom-button {
+    background-color: rgb(29, 155, 240) !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.05rem !important;
+    padding: 0.8rem 0rem !important;
+    border-radius: 6rem !important;
+    width: 100%;
+}
+
+.button-div .icon {
+    display: none;
+}
+
+.profile {
+    margin: 1rem 0rem;
+    margin-top: auto;
+    padding-left: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    padding-top: 1rem; 
+}
+
+.profile:hover {
+    background-color: rgba(128, 128, 128, 0.203);
+    border-radius: 6rem;
+    cursor: pointer;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture img {
+   width: 100%;
+   height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  overflow: hidden;
+  display: flex;
+}
+
+.user-details {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.username, .user-tag {
+    margin: 0;
+    padding: 0;
+}
+
+.user-tag {
+    color: gray;
+    font-weight: 400;
+}
+
+.more-button {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-list-item span {
+        display: none;
+    }
+
+    .header {
+        justify-content: center !important;
+        width: 8rem;
+    }
+
+    .header-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items {
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .custom-button {
+        width: 4rem;
+        border-radius: 50%;
+    }
+
+    .text-button {
+        display: none;
+    }
+    .button-div .icon {
+        display: initial;
+    }
+
+    .button-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .username, .user-tag, .more-button {
+        display: none;
+    }
+  }
