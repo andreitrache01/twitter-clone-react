@@ -1,6 +1,5 @@
 .homepage {
     color: white;
-    height: 100%;
     border: 1px solid rgba(128, 128, 128, 0.487);
     
 }
@@ -54,3 +53,21 @@
     color: gray;
     font-weight: 400;
 }
+
+.sticky-container {
+    top: 1rem;
+    position: sticky;
+    background: transparent;
+  z-index: 1;
+}
+
+.sticky-container::before {
+    content: "";
+    position: absolute;
+    top: -1rem; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+  }

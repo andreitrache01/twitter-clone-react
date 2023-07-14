@@ -6,6 +6,8 @@ const TweetSection = () => {
   let [inputValue, setInputValue] = useState("");
 
   const handleChange = (event: any) => {
+    console.log(event.target.value);
+
     setInputValue(event.target.value);
   };
 

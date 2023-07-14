@@ -1,0 +1,151 @@
+.trends {
+    width: 38%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.trends::-webkit-scrollbar {
+    display: none;
+}
+
+.trends-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.3rem;
+    margin-left: 2rem;
+}
+
+.trends-search input {
+    background: rgb(32, 35, 39);
+    border: none;
+    border-radius: 16rem;
+    outline: none;
+    color: white;
+    font-size: 1.1rem;
+    height: 3rem;
+    width: 20rem;
+}
+
+#basic-addon1 {
+    border-top-left-radius: 16rem;
+    border-bottom-left-radius: 16rem;
+    background-color: rgb(32, 35, 39);
+    border: none;
+    color:rgb(113, 118, 123);
+    padding: 1rem 1.5rem;
+}
+
+/* .get-verified {
+    margin: 2rem;
+    margin-top: 0;
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    background-color: rgb(22, 24, 28);
+    width: 24rem;
+} */
+
+.container-style {
+    margin: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    background-color: rgb(22, 24, 28);
+    width: 24rem;
+}
+
+.container-style.trends-for-you, .container-style.who-to-follow {
+    padding: 0 !important;
+}
+
+.get-verified-title p {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.6rem;
+}
+
+.get-verified-description p {
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-bottom: 0.7rem;
+}
+
+.verified-button .custom-button {
+    width: 8rem;
+    height: 2.5rem;
+    padding: 0 !important;
+    font-size: 1rem !important;
+    letter-spacing: 0 !important;
+}
+
+.trends-title, .follow-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.6rem;
+    padding: 0.8rem 1rem;
+    padding-bottom: 0;
+}
+
+.trend, .follow-profile {
+    padding: 0.8rem 1rem;
+}
+
+.trend:hover, .follow-profile:hover {
+    background-color: rgba(163, 163, 163, 0.067);
+    cursor: pointer;
+}
+
+.trend-category {
+    color: rgb(113, 118, 123);
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.5rem;
+}
+
+.trend-name {
+    font-weight: 600;
+}
+
+.trend-tweets {
+    color: rgb(113, 118, 123);
+    font-size: 0.9rem;
+}
+
+.follow-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.follow-profile .user-tag {
+    font-size: 1rem;
+}
+
+.follow-profile .follow-button {
+    margin-left: auto;
+}
+
+.follow-button .custom-button {
+    font-size: 0.9rem !important;
+    color: black !important;
+    width: 5rem;
+    padding: 0.3rem !important;
+    background-color: white !important;
+} 
+
+@media only screen and (max-width: 1200px) {
+    .trends {
+        width: 17%;
+    }
+}

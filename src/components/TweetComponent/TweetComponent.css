@@ -1,0 +1,47 @@
+.tweet {
+    /* background-color: aqua; */
+    padding: 1rem 1.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.487);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+.profile-details { 
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.interaction-data-section {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    color: rgb(113, 118, 123);
+}
+
+.interaction-data-section > * {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container-verified {
+    /* padding: 0.2rem; */
+    color: rgb(29, 155, 240);
+    /* width: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-tag {
+    color: rgb(113, 118, 123);
+    font-weight: 400;
+    font-size: 1rem;
+}

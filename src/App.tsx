@@ -3,7 +3,7 @@ import "./App.css";
 import HomePage from "./pages/HomePage/HomePage";
 import NotFound from "./pages/NotFound/NotFound";
 import Header from "./components/Header/Header";
-import Trends from "./components/Trends/Trends";
+import TrendsSection from "./components/TrendsSection/TrendsSection";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
-        <Trends />
+        <TrendsSection />
       </div>
     </>
   );

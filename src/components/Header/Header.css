@@ -1,11 +1,14 @@
 .header {
     width: 31%;
-    overflow-y: auto; /* Adds vertical scrollbar if necessary */
+    overflow-y: auto;
     overflow-x: hidden;
     max-height: 100vh;
     display: flex;
     justify-content: flex-end;
 }
+.header::-webkit-scrollbar {
+    display: none;
+  }
 
 .items {
     width: 20rem;

@@ -8,27 +8,30 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
-      <p className="title">Home</p>
-      <div className="tabs">
-        <div className="tab-box" onClick={() => setActiveTabIndex(0)}>
-          <div
-            className={`tab ${
-              activeTabIndex === 0 ? "custom-underline" : "inactive"
-            }`}
-          >
-            For you
+      <div className="sticky-container">
+        <p className="title">Home</p>
+        <div className="tabs">
+          <div className="tab-box" onClick={() => setActiveTabIndex(0)}>
+            <div
+              className={`tab ${
+                activeTabIndex === 0 ? "custom-underline" : "inactive"
+              }`}
+            >
+              For you
+            </div>
           </div>
-        </div>
-        <div className="tab-box" onClick={() => setActiveTabIndex(1)}>
-          <div
-            className={`tab ${
-              activeTabIndex === 1 ? "custom-underline" : "inactive"
-            }`}
-          >
-            Following
+          <div className="tab-box" onClick={() => setActiveTabIndex(1)}>
+            <div
+              className={`tab ${
+                activeTabIndex === 1 ? "custom-underline" : "inactive"
+              }`}
+            >
+              Following
+            </div>
           </div>
         </div>
       </div>
+
       {/* Tweet section */}
       <TweetSection />
       {/* Feed section */}
